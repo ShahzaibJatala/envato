@@ -1,0 +1,343 @@
+*{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+#nav-bar-decoration{
+  
+    position: fixed;
+    top: 0%;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+
+}
+
+
+.search-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.category-select {
+    border: none;
+    background: none;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    border-right: 2px solid #ddd;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+.searchdarkcolor{
+    background-color: silver;
+}
+
+.hole-searchbar{
+     margin-right: 10px;
+}
+/* navbar button  */
+@media (max-width: 600px) {
+    #myButton {
+        display: none;
+    }
+}
+/* Initial styling for the link */
+.custom-link {
+    text-decoration: none; 
+    position: relative;
+     top: 75px;
+    color: black;
+  }
+  .custom-link::after {
+    content: ''; 
+    position: absolute;
+     /* Position the pseudo-element relative to the link */
+    left: 0; 
+    /* Start underline from the left */
+    bottom: -2px;
+     /* Position 2px below the link text */
+    width: 0;
+     /* Start with no width for the underline */
+    height: 1px;
+     /* Set the underline height */
+    background-color: black;
+    transition: width 0.3s ease; /* Smooth transition for underline effect */
+  }
+  .custom-link:hover{
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* Hover effect for the link */
+  .custom-link:hover::after {
+    width: 100%;
+     /* Expand the underline to the full width on hover */
+  }
+  
+  /* carousel  */
+  .first:hover{
+    border: 2px solid black;
+}
+.carousel-decoration{
+   position: relative;
+   top: 75px;
+
+}
+
+.bunzo-font-style{
+  font-family:'Times New Roman', Times, serif;
+  font-size:x-large;
+}
+.bunzo-para-style{
+  font-family:Arial, Helvetica, sans-serif;
+}
+.side-bar{
+  position: sticky;
+  top: 100px;
+}
+
+.bunzo-tittle-style{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: x-large;
+}
+
+/* description buttons  */
+
+.oval-btn {
+  background-color: white;
+  border-radius: 30px;
+  padding: 8px 20px;
+  border: 0.5px solid black;
+  color: #000;
+}
+
+.commercial-license{
+   margin-bottom: 50%;
+
+}
+
+/* first-tag for photos */
+.similar-web-templates-outer{
+  margin-top: 8%;
+  margin-left: 2%;
+}
+
+.similar-web-templates{
+   text-decoration: none;
+   color: #000;
+}
+
+.similar-web-templates:hover{
+  text-decoration: none;
+  border-bottom: 2px solid black;
+  color: #000;
+}
+
+
+
+
+/* .footer-outer{
+  margin-top: 0%;
+  background-color: #faf5de;
+}
+
+.social-links{
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.social-links-inner{
+   color: #000;
+   text-decoration: none;
+   font-size:larger;
+
+} */
+ /* Apply a flexbox layout to make the footer stay at the bottom */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1; /* This ensures that the content area takes up the remaining space */
+}
+
+footer {
+  width: 100vw;
+  background-color: #faf5de;
+}
+
+.footer-outer {
+  margin-top: 0;
+  background-color: #faf5de;
+  padding: 2rem 0;
+}
+
+.social-links {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.footer-logo {
+  width: 140px;
+  height: 38px;
+}
+
+.social-links-inner {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: flex;
+}
+
+.social-links-inner a {
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-links-inner a:hover {
+  color: #007bff;
+}
+
+
+.newsletter input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.newsletter button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .social-links {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .social-links-inner {
+    font-size: 1.2rem;
+  }
+
+  .footer-logo {
+    width: 120px;
+    height: 80px;
+  }
+}
+
+/* footer email start */
+.search-email{
+  border-right: none;
+}
+
+.email-setting{
+  height: 38px;
+  margin-top: 5%;
+  border-left: none;
+
+}
+
+/* footer email end  */
+
+/* side links of footer  start  */
+.links-decoration:hover{
+    border-bottom: 1px solid black;
+
+}
+
+
+/* side links of footer end  */
+
+/* last footer start  */
+.footer-last-links:hover{
+   border-bottom: 1px solid black;
+
+
+}
+
+
+/* select items  */
+.select-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.globe-icon {
+  position: absolute;
+  left: 10px;
+  font-size: 18px;
+  pointer-events: none;
+}
+
+.borderless-select {
+  background-color: #faf5de;
+  appearance: none;  
+  border: none;
+  padding: 10px 30px 10px 40px;  
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.borderless-select:focus {
+  outline: none;
+}
+
+
+/* last footer end  */
